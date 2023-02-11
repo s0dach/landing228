@@ -154,3 +154,30 @@
 .oneHeader {
   color: #fff;
 }
+.mapsYandexSection {
+  width: 100%;
+}
+.intro h2 {
+  border-bottom: 10px solid #20b2aa;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.displayFlex {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.displayFlexMaps {
+  display: flex;
+  justify-content: center;
+}
+.displayFlexMapsh1 {
+  color: #343434;
+  font-weight: 700;
+  font-size: 4rem;
+  cursor: context-menu;
+}
+.displayFlexMapsh1:hover {
+  color: #20b2aa;
+  transition: 0.5s;
+}

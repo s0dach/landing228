@@ -9,6 +9,7 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { ModalCall } from "./components/modalCall/ModalCall";
+import { Maps } from "./components/maps";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -32,6 +33,7 @@ const App = () => {
         <Header setActive={setActive} data={landingPageData.Header} />
         <About data={landingPageData.About} />
         <Services data={landingPageData.Services} />
+        <Maps />
         <Contact data={landingPageData.Contact} />
       </>
       <ModalCall setActive={setActive} active={active} />

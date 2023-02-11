@@ -13,18 +13,20 @@ export const Header = (props) => {
               <div className="row">
                 <div className="col-md-8 col-md-offset-2 intro-text">
                   <h1>
-                    Ищете пункт приема металлолома?
+                    Прием металлолома в Тюмени
                     <span></span>
                   </h1>
                   <h1>
-                    Требуется демонтаж и вывоз металлолома?
+                    Дорого
                     <span></span>
                   </h1>
-                  <h1>
-                    Хотите продать лом по высокой цене?
-                    <span></span>
-                  </h1>
-                  <p>{props.data ? props.data.paragraph : "Загрузка"}</p>
+                  <div className="displayFlex">
+                    <h2>
+                      + 7 999 999 99 99
+                      <span></span>
+                    </h2>
+                  </div>
+                  <p></p>
                   <span
                     onClick={() => navigate("/price")}
                     className="btnCall btn-customOne btn-lgCall page-scroll"
