@@ -8,7 +8,6 @@ import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import { Prices } from "./components/Prices";
 import { ModalCall } from "./components/modalCall/ModalCall";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -28,24 +27,13 @@ const App = () => {
   }, [state]);
   return (
     <div>
-      {!state ? (
-        <>
-          <Navigation />
-          <Header
-            setActive={setActive}
-            setMade={setMade}
-            data={landingPageData.Header}
-          />
-          <About data={landingPageData.About} />
-          <Services data={landingPageData.Services} />
-          <Contact data={landingPageData.Contact} />
-        </>
-      ) : (
-        <>
-          <Navigation setMade={setMade} />
-          <Prices />
-        </>
-      )}
+      <>
+        <Navigation />
+        <Header setActive={setActive} data={landingPageData.Header} />
+        <About data={landingPageData.About} />
+        <Services data={landingPageData.Services} />
+        <Contact data={landingPageData.Contact} />
+      </>
       <ModalCall setActive={setActive} active={active} />
     </div>
   );

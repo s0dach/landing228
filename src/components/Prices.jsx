@@ -10,82 +10,82 @@ export const Prices = () => {
         </span>
       </div>
       <div className="pricesSectionPriceBlock">
-        <div className="pricesSectionPriceTextOne">
+        <div className="pricesSectionPriceText">
           <span>Металл</span>
         </div>
-        <div className="pricesSectionPriceTextOne">
+        <div className="pricesSectionPriceText">
           <span>Цена от ₽/кг</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Медь</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>550-560</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-105</span>
         </div>
       </div>
       <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>Алюминий</span>
         </div>
-        <div className="pricesSectionPriceText">
+        <div className="pricesSectionPriceTextOne">
           <span>95-104</span>
         </div>
       </div>

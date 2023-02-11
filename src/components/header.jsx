@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { ModalCall } from "./modalCall/ModalCall";
 
 export const Header = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <header id="header">
@@ -24,7 +26,7 @@ export const Header = (props) => {
                   </h1>
                   <p>{props.data ? props.data.paragraph : "Загрузка"}</p>
                   <span
-                    onClick={() => props.setMade(true)}
+                    onClick={() => navigate("/price")}
                     className="btnCall btn-customOne btn-lgCall page-scroll"
                   >
                     Узнать цены

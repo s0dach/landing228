@@ -8,7 +8,9 @@
   justify-content: center;
 }
 .pricesSectionTextSpan {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #343434;
+  font-weight: 600;
 }
 .pricesSectionPriceBlock {
   display: flex;
@@ -34,8 +36,121 @@
   text-align: center;
   padding: 20px;
   font-size: 1.5rem;
+  font-weight: 600;
   color: #000;
+  border: 1px solid #343434;
+  background-color: #fff;
 }
 .btnCall {
   cursor: pointer;
+}
+.pageSpan {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.pageSpan:hover {
+  color: teal;
+  transition: 0.3s;
+  border-bottom: 3px solid #fff;
+}
+.company_header {
+}
+.company_headerSection {
+  background: url(../../public/img/company.jpg);
+
+  background-position: center center;
+  /* определяет размер изображения на странице */
+  background-size: cover;
+  /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  background-repeat: no-repeat;
+  /* cвойство определяет, будет ли фоновое изображение прокручиваться 
+  вместе с остальной частью страницы или будет фиксированным */
+  background-attachment: fixed;
+  padding-top: 80px;
+  display: flex;
+  height: 100%;
+}
+.company_headerDivOne {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.company_headerDiv {
+  width: 100%;
+}
+.company_headerDivOneP {
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: 600;
+  color: #343434;
+  padding: 20px;
+}
+.company_headerDivOneP:hover {
+  color: #20b2aa;
+}
+.company_headerDivOnespan {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 20px;
+}
+.company_headerDivOnespanh {
+  color: #000;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.company_headerDivOnespanh:hover {
+  color: #20b2aa;
+}
+.company_headerDivOnespanP {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 20px;
+}
+.companySectionTwo {
+  padding: 25px;
+  margin: 20px;
+  background: rgb(15, 13, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 13, 47, 1) 0%,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(221, 222, 231, 1) 0%,
+    rgba(214, 220, 229, 1) 35%,
+    rgba(114, 197, 203, 1) 100%
+  );
+  border: 3px solid #20b2aa;
+}
+.companySectionTwoBlock {
+  display: flex;
+}
+.companySectionTwoBlockspan {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 20px;
+  margin-left: 20px;
+  align-items: center;
+}
+.companySectionThree {
+  padding: 50px 50px;
+  background-color: #20b2aa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.companySectionThreeText {
+  color: #fff;
+  font-size: 2rem;
+  border: 2px solid black;
+  font-weight: 700;
+  padding: 10px;
+}
+.oneHeader {
+  color: #fff;
 }
