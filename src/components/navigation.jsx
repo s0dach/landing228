@@ -17,12 +17,12 @@ export const Navigation = ({ setMade }) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <span
+          <a
             onClick={() => setMade(false)}
             className="navbar-brand page-scroll"
           >
             | Я
-          </span>
+          </a>
         </div>
 
         <div
