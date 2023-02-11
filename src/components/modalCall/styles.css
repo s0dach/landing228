@@ -1,0 +1,50 @@
+.modalAct {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+}
+.modalAct.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.modalDiv {
+  display: grid;
+  justify-content: space-between;
+}
+.modalDivOne {
+  display: grid;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buttonmodalDiv {
+  padding: 10px 20px 0 20px;
+}
+.modalButton {
+  border: 1px solid #20b2aa;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.inputModal {
+  height: 50px;
+  min-width: 300px;
+}
+.spanModal {
+  margin-bottom: 5px;
+  font-size: 2rem;
+}

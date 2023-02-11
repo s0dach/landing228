@@ -1,0 +1,41 @@
+.pricesSection {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.pricesSectionText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricesSectionTextSpan {
+  font-size: 2rem;
+}
+.pricesSectionPriceBlock {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.pricesSectionPriceBlockOne {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+.pricesSectionPriceText {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #20b2aa;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.pricesSectionPriceTextOne {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #000;
+}
+.btnCall {
+  cursor: pointer;
+}
