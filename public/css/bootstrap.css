@@ -11,6 +11,16 @@ html {
 }
 body {
   margin: 0;
+  background-image: url(../img/body.jpg);
+  background-position: center center;
+  /* определяет размер изображения на странице */
+  background-size: cover;
+  /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  background-repeat: no-repeat;
+  /* cвойство определяет, будет ли фоновое изображение прокручиваться 
+  вместе с остальной частью страницы или будет фиксированным */
+  background-attachment: fixed;
+  width: 100%;
 }
 article,
 aside,
@@ -1618,9 +1628,9 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
 }
-.blur {
+/* .blur {
   filter: blur(2px);
-}
+} */
 .col-xs-1,
 .col-sm-1,
 .col-md-1,

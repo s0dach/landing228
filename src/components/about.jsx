@@ -8,7 +8,7 @@ export const About = (props) => {
           <div className="blur">
             <div className="col-xs-12 col-md-6">
               {" "}
-              <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+              <img src="img/metal.png" className="img-responsive" alt="" />{" "}
             </div>
           </div>
           <div className="col-xs-12 col-md-6">

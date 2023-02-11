@@ -18,12 +18,17 @@ h2 {
   margin: 0 0 20px;
   font-weight: 800;
   font-size: 36px;
-  color: #20b2aa;
+  color: #fff;
 }
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #20b2aa;
+  color: #fff;
+}
+#section p {
+  line-height: 24px;
+  margin: 30px 0;
+  color: #fff;
 }
 h4 {
   font-size: 18px;
@@ -92,7 +97,7 @@ hr {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
@@ -164,13 +169,13 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   background-color: #20b2aa;
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 25px;
   transition: all 0.5s linear;
   border: 1px solid black;
@@ -178,13 +183,13 @@ hr {
 .btn-customCall {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: black;
-  background-color: #ff6347;
+  color: #fff;
+  background-color: #971922;
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 25px;
   transition: all 0.5s linear;
   border: 1px solid black;
@@ -237,12 +242,12 @@ a:focus,
   background-size: cover;
   -o-background-size: cover;
 }
-.intro .overlay {
+/* .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
-}
+} */
 .intro h1 {
-  background-color: wheat;
+  background-color: rgba(0, 0, 0, 0.6);
   font-family: "Raleway", sans-serif;
   color: #20b2aa;
   font-size: 82px;
@@ -256,7 +261,7 @@ a:focus,
   color: #5ca9fb;
 }
 .intro p {
-  background-color: wheat;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #20b2aa;
   font-size: 22px;
   font-weight: 300;
@@ -288,15 +293,18 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 100px 0;
+  /* background-color: red; */
 }
 #about h3 {
   font-size: 22px;
   margin: 0 0 20px;
+  color: #343434;
 }
 #about h2 {
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  color: #343434;
 }
 #about h2::after {
   position: absolute;
@@ -312,6 +320,14 @@ header .intro-text {
   margin-left: 6px;
   list-style: none;
   padding: 0;
+  color: #343434;
+}
+#section {
+  background: url(../img/demontaj.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #about .about-text li:before {
   content: "\f00c";
@@ -324,13 +340,14 @@ header .intro-text {
 #about img {
   width: 520px;
   margin-top: 10px;
-  background: #fff;
+  /* background: #fff; */
   border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.06); */
 }
 #about p {
   line-height: 24px;
   margin: 30px 0;
+  color: #343434;
 }
 /* Services Section */
 #services {
@@ -401,6 +418,15 @@ header .intro-text {
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
+}
+.about-text {
+  margin-top: 50px;
+}
+.about-textone {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 .hover-bg .hover-text > h4 {
   opacity: 0;
@@ -521,7 +547,7 @@ header .intro-text {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
+  /* background: transparent; */
   border: 2px solid #fff;
 }
 #contact .btn-custom:hover {

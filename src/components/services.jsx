@@ -2,30 +2,42 @@ import React from "react";
 
 export const Services = (props) => {
   return (
-    <div id="services" className="text-center">
+    <div id="section">
       <div className="container">
-        <div className="section-title">
-          <h2>СДАТЬ ЛОМ В ПРИЕМ МЕТАЛЛА (2023 ГОД)</h2>
-          <p>
-            На протяжении всего 2023 года «В-Лом» даем выгодные цены, поэтому
-            сдать металл в наш пункт приема «Ял-Мет» - логичное решение. Являясь
-            крупной скупкой, мы работаем на количество и держим цены на лом в
-            2023 году максимальными.
-          </p>
-        </div>
         <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                  </div>
+          <div className="col-xs-12 col-md-6">
+            <div className="about-textone">
+              <h2>Демонтаж</h2>
+              <p>{props.data ? props.data.paragraph : "loading..."}</p>
+              <h3>
+                Почему следует доверить нам резку, снос и демонтаж
+                металлоконструкций?
+              </h3>
+              <p>
+                Каждый заказ по демонтажным работам в «Ял-Мет» планируем
+                индивидуально. Учитываем все нюансы заказа для быстрого,
+                успешного, аккуратного проведения демонтажа. Участок приводим в
+                порядок, образовавшийся мусор, отходы вывозим на спецплощадку.
+                Помогаем клиентам с вопросом вывоза, утилизации металлолома.
+              </p>
+              <div className="list-style">
+                <div className="col-lg-6 col-sm-6 col-xs-12">
+                  {/* <ul>
+                    {props.data
+                      ? props.data.Why.map((d, i) => (
+                          <li key={`${d}-${i}`}>{d}</li>
+                        ))
+                      : "loading"}
+                  </ul> */}
                 </div>
-              ))
-            : "loading"}
+              </div>
+            </div>
+          </div>
+          <div className="blur">
+            <div className="col-xs-12 col-md-6">
+              <img src="img/about.png" className="img-responsive" alt="" />{" "}
+            </div>
+          </div>
         </div>
       </div>
     </div>
