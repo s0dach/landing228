@@ -6,7 +6,15 @@ export const Company = () => {
     <div className="company_header">
       <div className="company_headerSection">
         <div className="company_headerDivOne">
-          <p className="company_headerDivOneP">О компании</p>
+          <div className="flexCompanyDiv">
+            <p className="company_headerDivOneP">О компании</p>
+            <span
+              // onClick={() => props.setActive(true)}
+              className="btn-customCall btn-lgCall page-scroll"
+            >
+              Оставить заявку
+            </span>
+          </div>
           <p className="company_headerDivOnespan">
             Ял-Мет специализируется на:
           </p>

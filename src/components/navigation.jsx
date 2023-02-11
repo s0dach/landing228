@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Contact } from "./contact";
+import { Maps } from "./maps";
 
 export const Navigation = () => {
   const navigate = useNavigate();

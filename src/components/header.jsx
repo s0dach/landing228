@@ -35,7 +35,7 @@ export const Header = (props) => {
                   </span>
                   <span
                     onClick={() => props.setActive(true)}
-                    className="btnCall btn-customCall btn-lgCall page-scroll"
+                    className="btn-customCall btn-lgCall page-scroll"
                   >
                     Оставить заявку
                   </span>

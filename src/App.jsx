@@ -11,6 +11,7 @@ import "./App.css";
 import { ModalCall } from "./components/modalCall/ModalCall";
 import { Maps } from "./components/maps";
 import { NavigationBar } from "./components/modalCall/NavigationBar";
+import { Calc } from "./components/Calc";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -35,6 +36,7 @@ const App = () => {
         <Header setActive={setActive} data={landingPageData.Header} />
         <About data={landingPageData.About} />
         <Services data={landingPageData.Services} />
+        <Calc />
         <Maps />
         <Contact data={landingPageData.Contact} />
       </>
