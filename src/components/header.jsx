@@ -11,13 +11,21 @@ export const Header = (props) => {
               <div className="row">
                 <div className="col-md-8 col-md-offset-2 intro-text">
                   <h1>
-                    {props.data ? props.data.title : "Loading"}
+                    Ищете пункт приема металлолома?
                     <span></span>
                   </h1>
-                  <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                  <h1>
+                    Требуется демонтаж и вывоз металлолома?
+                    <span></span>
+                  </h1>
+                  <h1>
+                    Хотите продать лом по высокой цене?
+                    <span></span>
+                  </h1>
+                  <p>{props.data ? props.data.paragraph : "Загрузка"}</p>
                   <span
                     onClick={() => props.setMade(true)}
-                    className="btn btn-custom btn-lg page-scroll"
+                    className="btnCall btn-customOne btn-lgCall page-scroll"
                   >
                     Узнать цены
                   </span>
@@ -25,7 +33,7 @@ export const Header = (props) => {
                     onClick={() => props.setActive(true)}
                     className="btnCall btn-customCall btn-lgCall page-scroll"
                   >
-                    Заказать звонок
+                    Оставить заявку
                   </span>
                 </div>
               </div>

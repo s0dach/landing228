@@ -166,7 +166,7 @@ hr {
 .section-title p {
   font-size: 18px;
 }
-.btn-custom {
+.btn-customOne {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #000;
@@ -176,9 +176,7 @@ hr {
   margin: 0;
   font-size: 15px;
   font-weight: 700;
-  border-radius: 25px;
   transition: all 0.5s linear;
-  border: 1px solid black;
 }
 .btn-customCall {
   font-family: "Raleway", sans-serif;
@@ -190,16 +188,15 @@ hr {
   margin: 0;
   font-size: 15px;
   font-weight: 700;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   transition: all 0.5s linear;
-  border: 1px solid black;
   margin-left: 10px;
 }
-.btn-custom:hover,
-.btn-custom:focus,
-.btn-custom.focus,
-.btn-custom:active,
-.btn-custom.active {
+.btn-customOne:hover,
+.btn-customOne:focus,
+.btn-customOne.focus,
+.btn-customOne:active,
+.btn-customOnes.active {
   color: #fff;
   background-image: none;
   background-color: #008080;
@@ -236,7 +233,7 @@ a:focus,
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #20b2aa;
+  /* background-color: #20b2aa; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -249,8 +246,8 @@ a:focus,
 .intro h1 {
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "Raleway", sans-serif;
-  color: #20b2aa;
-  font-size: 82px;
+  color: #fff;
+  font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;

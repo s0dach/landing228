@@ -21,7 +21,7 @@ export const Navigation = ({ setMade }) => {
             onClick={() => setMade(false)}
             className="navbar-brand page-scroll"
           >
-            | Я
+            Ял-Мет
           </a>
         </div>
 
