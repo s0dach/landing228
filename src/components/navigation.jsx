@@ -44,15 +44,58 @@ export const Navigation = () => {
                 О компании
               </span>
             </li>
-            <li>
+            {/* <li>
               <span onClick={() => navigate("/price")} className="pageSpan">
                 Наши цены
               </span>
-            </li>
+            </li> */}
             <li>
-              <span className="pageSpan">Связаться с нами</span>
+              <span className="pageSpan">Контакты</span>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="navFlex">
+        <div className="navFlexBlock">
+          <span className="navFlexText">Черный лом</span>
+          <div className="blockNav">
+            <div>
+              <span className="blocknavspan">Сталь</span>
+            </div>
+            <div>
+              <span className="blocknavspan">Чугун</span>
+            </div>
+            <div>
+              <span className="blocknavspan">Нержавейка</span>
+            </div>
+          </div>
+        </div>
+        <div className="navFlexBlock">
+          <span className="navFlexText">Цветной лом</span>
+
+          <div className="blockNav">
+            <div>
+              <span className="blocknavspan">Медь</span>
+            </div>
+            <div>
+              <span className="blocknavspan">Латунь</span>
+            </div>
+            <div>
+              <span className="blocknavspan">Алюминий</span>
+            </div>
+            <div>
+              <span className="blocknavspan">Свинец</span>
+            </div>
+          </div>
+        </div>
+        <div className="navFlexBlock">
+          <span className="navFlexText">Демонтаж</span>
+        </div>
+        <div className="navFlexBlock">
+          <span className="navFlexText">Вывоз металлолома</span>
+        </div>
+        <div className="navFlexBlock">
+          <span className="navFlexText">Цены на сегодня</span>
         </div>
       </div>
     </nav>

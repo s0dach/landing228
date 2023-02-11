@@ -181,3 +181,53 @@
   color: #20b2aa;
   transition: 0.5s;
 }
+.navFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.navFlexText {
+  color: #343434;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 100;
+}
+.navFlexText:hover {
+  color: #fff;
+}
+.navFlexText:hover .blockNav {
+  display: block;
+}
+.navFlexBlock:hover .blockNav {
+  opacity: 1;
+}
+.navFlexBlock {
+  transition: 0.5s;
+  width: 100%;
+  text-align: center;
+}
+.blockNav:hover {
+  opacity: 1;
+}
+.blockNav {
+  display: grid;
+  opacity: 0;
+  margin-top: 15px;
+  position: absolute;
+  background-color: #20b2aa;
+  width: 200px;
+  transition: 1s;
+  cursor: pointer;
+  justify-items: center;
+}
+.blocknavspan {
+  color: #343434;
+  font-size: 2rem;
+  text-align: center;
+  transition: 0.5s;
+}
+.blocknavspan:hover {
+  color: #fff;
+}
