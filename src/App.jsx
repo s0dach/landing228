@@ -66,16 +66,15 @@ const App = () => {
   return (
     <div>
       <>
-        {/* <Navigation />
+        <Navigation />
         <NavigationBar />
         <Header setActive={setActive} data={landingPageData.Header} />
         <About data={landingPageData.About} />
         <Services data={landingPageData.Services} />
         <Calc />
         <Maps />
-        <Contact data={landingPageData.Contact} /> */}
-        <AdminPage />
-        {/* <AllPrices /> */}
+        <Contact data={landingPageData.Contact} />
+        <AllPrices />
       </>
       <ModalCall setActive={setActive} active={active} />
     </div>
