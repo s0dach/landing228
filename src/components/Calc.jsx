@@ -25,23 +25,29 @@ export const Calc = () => {
           <h1 className="calcsecth1">Калькулятор цен</h1>
           <h1 className="calcsecth2">Узнайте стоимость вашего металлолома</h1>
           <div className="calcSelectDiv">
-            <select
-              className="hall"
-              id="hall"
-              onChange={(e) => saveResult(e.target.value)}
-            >
-              {price &&
-                price.map((data, i) => {
-                  return <option value={i}>{data[0]}</option>;
-                })}
-            </select>
-            <input
-              defaultValue="5"
-              onChange={(e) => setNumber(e.target.value)}
-              className="inputQuant"
-              placeholder="Кол-во"
-              type="number"
-            />
+            <div className="gridCalc">
+              <span>Тип металла</span>
+              <select
+                className="hall"
+                id="hall"
+                onChange={(e) => saveResult(e.target.value)}
+              >
+                {price &&
+                  price.map((data, i) => {
+                    return <option value={i}>{data[0]}</option>;
+                  })}
+              </select>
+            </div>
+            <div className="gridCalc">
+              <span className="calcleftspan">Количество</span>
+              <input
+                defaultValue="5"
+                onChange={(e) => setNumber(e.target.value)}
+                className="inputQuant"
+                placeholder="Кол-во"
+                type="number"
+              />
+            </div>
             <div className="checkboxFlex">
               <input
                 checked={state}

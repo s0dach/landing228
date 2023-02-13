@@ -80,7 +80,7 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #20b2aa;
+  background-color: #008080;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -238,10 +238,9 @@ a:focus,
   background-size: cover;
   -o-background-size: cover;
 }
-/* .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-} */
+.intro .overlay {
+  background-color: rgba(0, 128, 128, 0.2);
+}
 .intro h1 {
   background-color: rgba(0, 0, 0, 0.6);
   font-family: "Raleway", sans-serif;
@@ -266,8 +265,8 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 /* Features Section */
@@ -288,7 +287,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   /* background-color: red; */
 }
 #about h3 {
@@ -674,4 +673,39 @@ label {
 .saveButton {
   width: 100px;
   height: 30px;
+}
+.containerCenter {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.centerBlock {
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+}
+.centerBlockOne {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.BlockSpanDiv {
+  text-align: left;
+}
+.blockCenterText {
+  color: #343434;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nameCenterBlock {
+  color: #008080;
+  font-weight: 800;
+  cursor: pointer;
+}
+.gridCalc {
+  display: grid;
+  text-align: left;
 }

@@ -9,6 +9,7 @@ import { Calculator } from "./Calculator";
 import { ContactPage } from "./ContactPage";
 import { DemontajPage } from "./DemontajPage";
 import { Lists } from "./Lists";
+import { MetalPage } from "./MetalPage";
 import { Price } from "./Price";
 import { PricesPage } from "./PricesPage";
 
@@ -24,6 +25,7 @@ export const AppRouter = () => {
       <Route path="/contacts" element={<ContactPage />} />
       <Route path="/prices" element={<PricesPage />} />
       <Route path="/cvetnoy-lom" element={<Price />} />
+      <Route path="/metal" element={<MetalPage />} />
       <Route path="/adminpanel" element={<AdminPage />} />
       <Route path="/" element={<App />} />
       <Route path="/calculator" element={<Calculator />} />

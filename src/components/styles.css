@@ -48,16 +48,16 @@
   cursor: pointer;
 }
 .pageSpan {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #fff;
   cursor: pointer;
   margin-left: 15px;
 }
 .pageSpan:hover {
-  color: #cd5c5c;
+  /* color: #20b2aa; */
   transition: 0.3s;
-  border-bottom: 3px solid #fff;
+  background-color: #20b2aa;
 }
 .company_header {
 }
@@ -84,9 +84,10 @@
   width: 100%;
 }
 .company_headerDivOneP {
+  text-transform: uppercase;
   cursor: pointer;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 800;
   color: #343434;
   padding: 20px;
 }
@@ -185,7 +186,7 @@
   cursor: context-menu;
 }
 .displayFlexMapsh1:hover {
-  color: #20b2aa;
+  color: #008080;
   transition: 0.5s;
 }
 .navFlex {
@@ -194,7 +195,7 @@
   justify-content: space-around;
 }
 .navFlexText {
-  color: #343434;
+  color: #fff;
   cursor: pointer;
   /* font-size: 20px; */
   font-weight: 500;
@@ -215,7 +216,7 @@
   cursor: pointer;
 }
 .navFlexBlock:hover {
-  background-color: #800000;
+  background-color: #20b2aa;
 }
 .navFlexBlock:hover .navFlexText {
   color: #fff;
@@ -267,25 +268,31 @@
   padding: 10px;
 }
 .calcsecth1 {
+  text-transform: uppercase;
+  font-weight: 800;
   color: #20b2aa;
+  margin-bottom: 0;
 }
 .calcsecth2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 0;
+  font-weight: 800;
   color: #343434;
 }
 .calcSection {
   padding: 20px 30px;
 }
 .calcSectionDiv {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 1);
 }
 .hall {
   min-width: 200px;
-  border: 0px;
   outline: 0px;
   min-height: 50px;
 }
 .calcSelectDiv {
-  padding: 20px;
+  padding: 50px 0;
   display: flex;
 }
 .inputQuant {
@@ -317,6 +324,7 @@
 }
 .itogo {
   min-width: 300px;
+  border-radius: 20px;
   min-height: 100px;
   background-color: #20b2aa;
   border: 1px solid #343434;
@@ -360,9 +368,6 @@
   background-color: #800000;
   padding: 5px;
 }
-.calcpadding {
-  margin-top: 100px;
-}
 .company_headerSectionOnebs {
   padding-top: 80px;
 }
@@ -373,4 +378,22 @@
   border: none;
   color: #000;
   margin-top: 20px;
+}
+.calcleftspan {
+  margin-left: 10px;
+}
+.pDemontaj {
+  font-size: 2rem;
+  color: #343434;
+  font-weight: 600;
+}
+.demontajDiv {
+  padding: 30px;
+  text-align: justify;
+}
+.autolomp {
+  font-size: 2rem;
+  color: #343434;
+  font-weight: 900;
+  margin-bottom: 50px;
 }

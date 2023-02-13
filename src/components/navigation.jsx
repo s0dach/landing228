@@ -16,63 +16,106 @@ export const Navigation = () => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
+            <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <span
-            onClick={() => {
-              navigate("/");
-            }}
-            className="navbar-brand page-scroll oneHeader"
+          <div
+            className="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
           >
-            Ял-Мет
-          </span>
-        </div>
-
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <span
-                className="pageSpanCalc"
-                onClick={() => {
-                  navigate("/calculator");
-                }}
-              >
-                Калькулятор цен
-              </span>
-            </li>
-            <li>
-              <span
-                onClick={() => {
-                  navigate("/about");
-                }}
-                className="pageSpan"
-              >
-                О компании
-              </span>
-            </li>
-            {/* <li>
+            <ul className="nav navbar-nav navbar-right">
+              <li>
+                <span
+                  className="pageSpan"
+                  onClick={() => {
+                    navigate("/calculator");
+                  }}
+                >
+                  Калькулятор цен
+                </span>
+              </li>
+              <li>
+                <span
+                  onClick={() => {
+                    navigate("/about");
+                  }}
+                  className="pageSpan"
+                >
+                  О компании
+                </span>
+              </li>
+              {/* <li>
               <span onClick={() => navigate("/price")} className="pageSpan">
                 Наши цены
               </span>
             </li> */}
-            <li>
-              <span
-                className="pageSpan"
-                onClick={() => {
-                  navigate("/contacts");
-                }}
-              >
-                Контакты
-              </span>
-            </li>
-          </ul>
+              <li>
+                <span
+                  className="pageSpan"
+                  onClick={() => {
+                    navigate("/contacts");
+                  }}
+                >
+                  Контакты
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="containerCenter">
+        <div className="centerBlock">
+          <div className="centerBlockOne">
+            <h1 className="nameCenterBlock" onClick={() => navigate("/")}>
+              ЯЛ-МЕТ
+            </h1>
+          </div>
+        </div>
+        <div className="centerBlock">
+          <div className="centerBlockOne">
+            <div className="imageBlock">
+              <img
+                src="img/phone.png"
+                width="50"
+                height="50"
+                className="img-responsive"
+                alt=""
+              />
+            </div>
+            <div className="BlockSpanDiv">
+              <div>
+                <span className="blockCenterText">
+                  улица Тимофея Чаркова, 14
+                </span>
+              </div>
+              <div>
+                <span>c 8 до 21:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="centerBlock">
+          <div className="centerBlockOne">
+            <div className="imageBlock">
+              <img
+                src="img/location.png"
+                width="50"
+                height="50"
+                className="img-responsive"
+                alt=""
+              />
+            </div>
+            <div className="BlockSpanDiv">
+              <div>
+                <span className="blockCenterText">+7 999 999 99 99</span>
+              </div>
+              <div>
+                <span>c 8 до 21:00</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="navFlex">
@@ -116,7 +159,9 @@ export const Navigation = () => {
           <span className="navFlexText">Аккумляторы</span>
         </div>
         <div className="navFlexBlock">
-          <span className="navFlexText">Вывоз металлолома</span>
+          <span onClick={() => navigate("/metal")} className="navFlexText">
+            Вывоз металлолома
+          </span>
         </div>
         <div className="navFlexBlock" onClick={() => navigate("/prices")}>
           <span className="navFlexText">Цены на сегодня</span>
