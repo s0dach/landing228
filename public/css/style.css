@@ -77,7 +77,6 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 5px;
   transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -515,6 +514,7 @@ header .intro-text {
   font-size: 16px;
 }
 #contact h2 {
+  color: #343434;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -529,11 +529,12 @@ header .intro-text {
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
+  color: #343434;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 #contact form {
   padding-top: 20px;
@@ -646,4 +647,31 @@ label {
   #about img {
     margin: 50px 0;
   }
+}
+.adminPage {
+  width: 100%;
+  background-color: #fff;
+}
+.adminPageDiv {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminSpan {
+  font-size: 50px;
+}
+.adminPageDivGrid {
+  display: grid;
+  padding: 10px;
+  justify-items: center;
+}
+.inputName {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+.saveButton {
+  width: 100px;
+  height: 30px;
 }

@@ -38,6 +38,16 @@ export const Navigation = () => {
           <ul className="nav navbar-nav navbar-right">
             <li>
               <span
+                className="pageSpanCalc"
+                onClick={() => {
+                  navigate("/calculator");
+                }}
+              >
+                Калькулятор цен
+              </span>
+            </li>
+            <li>
+              <span
                 onClick={() => {
                   navigate("/about");
                 }}
@@ -52,15 +62,27 @@ export const Navigation = () => {
               </span>
             </li> */}
             <li>
-              <span className="pageSpan">Контакты</span>
+              <span
+                className="pageSpan"
+                onClick={() => {
+                  navigate("/contacts");
+                }}
+              >
+                Контакты
+              </span>
             </li>
           </ul>
         </div>
       </div>
       <div className="navFlex">
-        <div className="navFlexBlock">
-          <span className="navFlexText">Черный лом</span>
-          <div className="blockNav">
+        {/* <div className="navFlexBlock">
+          <span
+            onClick={() => navigate("/chernyy-lom")}
+            className="navFlexText"
+          >
+            Черный лом
+          </span> */}
+        {/* <div className="blockNav">
             <div>
               <span className="blocknavspan">Сталь</span>
             </div>
@@ -70,33 +92,32 @@ export const Navigation = () => {
             <div>
               <span className="blocknavspan">Нержавейка</span>
             </div>
-          </div>
-        </div>
-        <div className="navFlexBlock">
-          <span className="navFlexText">Цветной лом</span>
-
-          <div className="blockNav">
-            <div>
-              <span className="blocknavspan">Медь</span>
-            </div>
-            <div>
-              <span className="blocknavspan">Латунь</span>
-            </div>
-            <div>
-              <span className="blocknavspan">Алюминий</span>
-            </div>
-            <div>
-              <span className="blocknavspan">Свинец</span>
-            </div>
-          </div>
-        </div>
-        <div className="navFlexBlock">
+          </div> */}
+        {/* </div> */}
+        {/* <div className="navFlexBlock">
+          <span
+            className="navFlexText"
+            onClick={() => navigate("/cvetnoy-lom")}
+          >
+            Цветной лом
+          </span>
+        </div> */}
+        <div className="navFlexBlock" onClick={() => navigate("/demontaj")}>
           <span className="navFlexText">Демонтаж</span>
+        </div>
+        <div className="navFlexBlock" onClick={() => navigate("/autolom")}>
+          <span className="navFlexText">Автолом</span>
+        </div>
+        <div
+          className="navFlexBlock"
+          onClick={() => navigate("/akkumulyatory")}
+        >
+          <span className="navFlexText">Аккумляторы</span>
         </div>
         <div className="navFlexBlock">
           <span className="navFlexText">Вывоз металлолома</span>
         </div>
-        <div className="navFlexBlock">
+        <div className="navFlexBlock" onClick={() => navigate("/prices")}>
           <span className="navFlexText">Цены на сегодня</span>
         </div>
       </div>

@@ -1,20 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
+import { Accums } from "./accums";
 import { Calc } from "./Calc";
 import { Contact } from "./contact";
 import { Maps } from "./maps";
 import { Navigation } from "./navigation";
-import { Prices } from "./Prices";
 
-export const Price = () => {
-  const [name, setName] = React.useState("");
-  const a = ["Цветной", "Черный"];
+export const AccumsPage = () => {
   return (
-    <>
+    <div>
       <Navigation />
-      <Prices name={a} />
+      <Accums />
       <Calc />
       <Maps />
       <Contact />
-    </>
+    </div>
   );
 };
