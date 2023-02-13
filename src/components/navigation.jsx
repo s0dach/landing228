@@ -5,6 +5,7 @@ import { Maps } from "./maps";
 
 export const Navigation = () => {
   const navigate = useNavigate();
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
