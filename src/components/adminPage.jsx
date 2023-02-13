@@ -5,6 +5,9 @@ export const AdminPage = () => {
   const [price, setPrice] = React.useState(undefined);
   const [firstName1, setFirstName1] = React.useState("");
   const [firstName2, setFirstName2] = React.useState("");
+  const [new1, setNew1] = React.useState(false);
+  const [newPrice, setNewPrice] = React.useState(null);
+  const [newPrice1, setNewPrice1] = React.useState(null);
   React.useEffect(() => {
     axios
       .get("http://95.163.234.208:4500/price/1")
@@ -22,6 +25,13 @@ export const AdminPage = () => {
 
     setFirstName1("");
     setFirstName2("");
+  };
+  const newLocation = () => {
+    const abc = [...price, [newPrice, newPrice1]];
+    axios.patch("http://95.163.234.208:4500/price/1", { one: abc });
+    setNewPrice(null);
+    setNewPrice1(null);
+    setNew1(false);
   };
   return (
     <div className="adminPage">
@@ -53,6 +63,25 @@ export const AdminPage = () => {
               </>
             );
           })}
+        {!new1 ? (
+          <button className="NewPosition" onClick={() => setNew1(true)}>
+            Добавить новую позицию
+          </button>
+        ) : (
+          <>
+            <input
+              onChange={(event) => setNewPrice(event.target.value)}
+              className="inputName"
+              placeholder="Новое название"
+            />
+            <input
+              onChange={(event) => setNewPrice1(event.target.value)}
+              className="inputName"
+              placeholder="Новая цена"
+            />
+            <button onClick={() => newLocation()}>СОХРАНИТЬ</button>
+          </>
+        )}
       </div>
     </div>
   );
