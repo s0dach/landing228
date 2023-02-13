@@ -74,7 +74,6 @@ const App = () => {
         <Calc />
         <Maps />
         <Contact data={landingPageData.Contact} />
-        <AllPrices />
       </>
       <ModalCall setActive={setActive} active={active} />
     </div>
