@@ -13,6 +13,7 @@
   opacity: 0;
 }
 .modalAct.active {
+  z-index: 100000000;
   opacity: 1;
   pointer-events: all;
 }
@@ -20,6 +21,7 @@
   padding: 20px;
   border-radius: 12px;
   background-color: #fff;
+  border: 5px solid #008080;
 }
 .modalDiv {
   display: grid;
@@ -27,7 +29,6 @@
 }
 .modalDivOne {
   display: grid;
-  justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -42,7 +43,7 @@
 }
 .inputModal {
   height: 50px;
-  min-width: 300px;
+  width: 100%;
 }
 .spanModal {
   margin-bottom: 5px;

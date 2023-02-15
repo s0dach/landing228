@@ -77,7 +77,7 @@ export const Navigation = () => {
           <div className="centerBlockOne">
             <div className="imageBlock">
               <img
-                src="img/phone.png"
+                src="img/location.png"
                 width="50"
                 height="50"
                 className="img-responsive"
@@ -86,8 +86,8 @@ export const Navigation = () => {
             </div>
             <div className="BlockSpanDiv">
               <div>
-                <span className="blockCenterText">
-                  улица Тимофея Чаркова, 14
+                <span className="blockCenterTextOne">
+                  ул. Тимофея Чаркова, 14
                 </span>
               </div>
               <div>
@@ -100,7 +100,7 @@ export const Navigation = () => {
           <div className="centerBlockOne">
             <div className="imageBlock">
               <img
-                src="img/location.png"
+                src="img/phone.png"
                 width="50"
                 height="50"
                 className="img-responsive"
@@ -146,6 +146,66 @@ export const Navigation = () => {
             Цветной лом
           </span>
         </div> */}
+        <div className="navFlexBlock">
+          <div class="dropdown">
+            <div class="navFlexText" onClick={() => navigate("/prices")}>
+              Черный лом
+            </div>
+            <div class="dropdown-content">
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Сталь
+              </div>
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Чугун
+              </div>
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Нержавейка
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="navFlexBlock">
+          <div class="dropdown">
+            <div class="navFlexText" onClick={() => navigate("/prices")}>
+              Цветной лом
+            </div>
+            <div class="dropdown-content">
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Медь
+              </div>
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Латунь
+              </div>
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Алюминий
+              </div>
+              <div
+                className="menuBlockText"
+                onClick={() => navigate("/prices")}
+              >
+                Свинец
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="navFlexBlock" onClick={() => navigate("/demontaj")}>
           <span className="navFlexText">Демонтаж</span>
         </div>

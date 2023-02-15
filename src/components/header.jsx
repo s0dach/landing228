@@ -1,9 +1,15 @@
 import React from "react";
+import { useContext } from "react";
+
 import { useNavigate } from "react-router-dom";
+import { ActiveContext } from "./context";
+
 import { ModalCall } from "./modalCall/ModalCall";
 
-export const Header = (props) => {
+export const Header = () => {
   const navigate = useNavigate();
+  const { active, setActive } = useContext(ActiveContext);
+  // const { setActive } = useContext(ActiveContext);
   return (
     <>
       <header id="header">
@@ -16,10 +22,10 @@ export const Header = (props) => {
                     Прием металлолома в Тюмени
                     <span></span>
                   </h1>
-                  <h1>
-                    Дорого
+                  <span className="h1headerintro">
+                    {/* Дорого */}
                     <span></span>
-                  </h1>
+                  </span>
                   <div className="displayFlex">
                     <h2>
                       + 7 999 999 99 99
@@ -34,7 +40,7 @@ export const Header = (props) => {
                     Узнать цены
                   </span>
                   <span
-                    onClick={() => props.setActive(true)}
+                    onClick={() => setActive(true)}
                     className="btn-customCall btn-lgCall page-scroll"
                   >
                     Оставить заявку

@@ -15,6 +15,8 @@ import { Calc } from "./components/Calc";
 import { AllPrices } from "./components/AllPrices";
 import { AdminPage } from "./components/adminPage";
 import axios from "axios";
+import { ActiveContext } from "./components/context";
+import { useContext } from "react";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -27,7 +29,8 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
   const [state, setMade] = React.useState(false);
-  const [active, setActive] = React.useState(false);
+  const { active, setActive } = useContext(ActiveContext);
+  console.log(active);
   // React.useEffect(() => {
   //   console.log(state);
   // }, [state]);
@@ -68,7 +71,7 @@ const App = () => {
       <>
         <Navigation />
         <NavigationBar />
-        <Header setActive={setActive} data={landingPageData.Header} />
+        <Header data={landingPageData.Header} />
         <About data={landingPageData.About} />
         <Services data={landingPageData.Services} />
         <Calc />

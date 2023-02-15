@@ -9,6 +9,12 @@ export const ModalCall = ({ active, setActive }) => {
     >
       <div className="modal__content" onClick={(e) => e.stopPropagation()}>
         <div className="modalDiv">
+          <div className="modalDivh1">
+            <h1 className="modalh1">Заказать звонок</h1>
+            <span className="spanModal">
+              Оставьте ваш номер телефона, мы перезвоним в ближайшее время.
+            </span>
+          </div>
           <span className="spanModal">Введите ваше имя</span>
           <input className="inputModal" type="text" />
         </div>

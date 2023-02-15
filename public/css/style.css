@@ -178,6 +178,7 @@ hr {
   transition: all 0.5s linear;
 }
 .btn-customCall {
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
@@ -231,7 +232,8 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(http://rusmetall.su/images/welcomeimg.jpg) center center
+    no-repeat;
   /* background-color: #20b2aa; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -239,17 +241,17 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background-color: rgba(0, 128, 128, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .intro h1 {
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 .intro h1 span {
   font-weight: 800;
@@ -503,7 +505,6 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
   color: black;
 }
 #contact .section-title {
@@ -700,6 +701,11 @@ label {
   font-size: 2rem;
   font-weight: 500;
 }
+.blockCenterTextOne {
+  color: #343434;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 .nameCenterBlock {
   color: #008080;
   font-weight: 800;
@@ -708,4 +714,50 @@ label {
 .gridCalc {
   display: grid;
   text-align: left;
+}
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .menuBlockText {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .menuBlockText:hover {
+  background-color: #008080;
+}
+
+.navFlexBlock:hover .dropdown-content {
+  display: block;
+}
+.modalh1 {
+  text-transform: uppercase;
+  color: #343434;
+  font-weight: 900;
+  text-align: center;
+}
+.modalDivh1 {
+  padding: 50px;
+  text-align: center;
 }
