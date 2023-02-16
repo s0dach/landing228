@@ -3,7 +3,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import App from "../App";
 import { AccumsPage } from "./AccumsPage";
 import { AdminPage } from "./adminPage";
-import { AutoLom } from "./autoLom";
 import { AutoLompage } from "./autoLompage";
 import { Calculator } from "./Calculator";
 import { ContactPage } from "./ContactPage";

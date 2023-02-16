@@ -8,11 +8,17 @@ export const AdminPage = () => {
   const [new1, setNew1] = React.useState(false);
   const [newPrice, setNewPrice] = React.useState(null);
   const [newPrice1, setNewPrice1] = React.useState(null);
+  const [number, setNumber] = React.useState("+7‒922‒396‒00‒11");
   React.useEffect(() => {
     axios
-      .get("http://95.163.234.208:4500/price/1")
+      .get("https://unmarred-silky-crowley.glitch.me/price/1")
+      .then(({ data }) => setNumber(data.number));
+  }, []);
+  React.useEffect(() => {
+    axios
+      .get("https://unmarred-silky-crowley.glitch.me/price/1")
       .then(({ data }) => setPrice(data.one));
-  });
+  }, []);
   const saveBtn = (dataName, dataPrice, name, priced, index) => {
     if (name === "") {
       name = dataName;
@@ -21,14 +27,23 @@ export const AdminPage = () => {
       priced = dataPrice;
     }
     price[index] = [name, priced];
-    axios.patch("http://95.163.234.208:4500/price/1", { one: price });
+    axios.patch("https://unmarred-silky-crowley.glitch.me/price/1", {
+      one: price,
+    });
 
     setFirstName1("");
     setFirstName2("");
   };
+  const saveNumber = (number) => {
+    axios.patch("https://unmarred-silky-crowley.glitch.me/price/1", {
+      number: number,
+    });
+  };
   const newLocation = () => {
     const abc = [...price, [newPrice, newPrice1]];
-    axios.patch("http://95.163.234.208:4500/price/1", { one: abc });
+    axios.patch("https://unmarred-silky-crowley.glitch.me/price/1", {
+      one: abc,
+    });
     setNewPrice(null);
     setNewPrice1(null);
     setNew1(false);
@@ -37,6 +52,16 @@ export const AdminPage = () => {
     <div className="adminPage">
       <div className="adminSpan">Админ-раздел</div>
       {/* <div className="adminPageDiv"> */}
+      <div className="adminPageDivGrid">
+        <input
+          className="inputName"
+          defaultValue={number}
+          onChange={(event) => setNumber(event.target.value)}
+        />
+        <button className="saveButton" onClick={() => saveNumber(number)}>
+          Сохранить
+        </button>
+      </div>
       <div className="adminPageDivGrid">
         {price &&
           price.map((data, i) => {

@@ -58,8 +58,6 @@
   transition: 0.3s;
   background-color: #20b2aa;
 }
-.company_header {
-}
 .company_headerSection {
   background: url(../../public/img/company.jpg);
 
@@ -71,7 +69,6 @@
   /* cвойство определяет, будет ли фоновое изображение прокручиваться 
   вместе с остальной частью страницы или будет фиксированным */
   background-attachment: fixed;
-  padding-top: 80px;
   display: flex;
   height: 100%;
 }
@@ -85,7 +82,7 @@
 .company_headerDivOneP {
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
   color: #343434;
   padding: 20px;
@@ -164,7 +161,8 @@
 .intro h2 {
   font-size: 5rem;
   border-bottom: 10px solid #20b2aa;
-  font-weight: 900;
+  font-weight: 100;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .displayFlex {
   display: flex;
@@ -247,6 +245,9 @@
 .displayFlexMapsh3 {
   color: #343434;
   font-size: 1.5rem;
+}
+.centerBlockMobile {
+  padding: 0;
 }
 .displayFlexMapsh3 {
   display: flex;
@@ -380,6 +381,15 @@
 .company_headerSectionOnebs {
   padding-top: 80px;
 }
+.centerBlockMobile {
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+}
+#contact {
+  padding: 30px;
+  background-color: #fff;
+}
 .NewPosition {
   width: 200px;
   height: 80px;
@@ -406,9 +416,66 @@
   font-weight: 900;
   margin-bottom: 50px;
 }
+.contactUl {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #343434;
+}
 .h1headerintro {
   color: #ffffff;
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+.rowOne {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 100px 0;
+}
+@media (max-width: 767px) {
+  .calcSectionDiv {
+    align-items: center;
+    justify-content: space-around;
+    display: block;
+  }
+  .calcSelectDiv {
+    display: block;
+  }
+  .inputQuant {
+    margin-left: 0;
+  }
+  .intro h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .navFlex {
+    display: block;
+  }
+  .company_headerDivOneP {
+    font-size: 10px;
+  }
+  .pricesSectionTextSpan {
+    font-size: 10px;
+  }
+  .pricesSectionText {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .intro h1 {
+    font-size: 15px;
+  }
+  .mobile {
+    display: grid;
+    justify-items: center;
+  }
+  .centerBlock {
+    display: none;
+  }
+  .centerBlockMobile {
+    padding: 0;
+  }
+  .blockCenterText {
+    font-size: 1.5rem;
+  }
 }

@@ -1,7 +1,14 @@
+import axios from "axios";
 import React from "react";
 import "./styles.css";
 
 export const ModalCall = ({ active, setActive }) => {
+  const [number, setNumber] = React.useState("+7‒922‒396‒00‒11");
+  React.useEffect(() => {
+    axios
+      .get("https://unmarred-silky-crowley.glitch.me/price/1")
+      .then(({ data }) => setNumber(data.number));
+  }, []);
   return (
     <div
       className={active ? "modalAct active" : "modalAct"}
@@ -25,7 +32,7 @@ export const ModalCall = ({ active, setActive }) => {
         <div>
           <span className="spanModal">
             Вы можете позвонить нам <br />
-            по номеру +7 999 999 99 99
+            по номеру {number}
           </span>
         </div>
         <div className="buttonmodalDiv">

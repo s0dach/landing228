@@ -6,7 +6,6 @@ import { Navigation } from "./navigation";
 import { Prices } from "./Prices";
 
 export const Price = () => {
-  const [name, setName] = React.useState("");
   const a = ["Цветной", "Черный"];
   return (
     <>

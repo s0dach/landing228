@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { useContext } from "react";
 import { ActiveContext } from "./context";
 import { ModalCall } from "./modalCall/ModalCall";

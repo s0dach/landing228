@@ -229,8 +229,6 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table;
-  width: 100%;
   padding: 0;
   background: url(http://rusmetall.su/images/welcomeimg.jpg) center center
     no-repeat;
@@ -688,6 +686,11 @@ label {
   width: 100%;
   text-align: center;
 }
+.centerBlockMobile {
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+}
 .centerBlockOne {
   display: flex;
   justify-content: space-around;
@@ -760,4 +763,16 @@ label {
 .modalDivh1 {
   padding: 50px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .intro h1 {
+    font-size: 15px;
+  }
+  .mobile {
+    display: grid;
+    justify-items: center;
+  }
+  .centerBlock {
+    display: none;
+  }
 }

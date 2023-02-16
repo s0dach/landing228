@@ -1597,24 +1597,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  /* height: 40px; */
   padding-bottom: 10px;
-  margin-left: 30px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+  margin: 0 30px;
 }
 .container-fluid {
   padding-right: 15px;
@@ -4280,6 +4264,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-header {
+    margin-bottom: 10px;
     float: left;
   }
 }

@@ -10,9 +10,9 @@ export const AllPrices = () => {
   const { active, setActive } = useContext(ActiveContext);
   React.useEffect(() => {
     axios
-      .get("http://95.163.234.208:4500/price/1")
+      .get("https://unmarred-silky-crowley.glitch.me/price/1")
       .then(({ data }) => setPrice(data.one));
-  });
+  }, []);
   // price.forEach((c) => console.log(c));
   return (
     <>
@@ -51,102 +51,6 @@ export const AllPrices = () => {
               );
             })
           : undefined}
-        {/* <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Медь блеск</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>610 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Медь кусок</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>600 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Медь микс</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span> 590 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Медь луженая</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>545 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Радиаторы тепловозные</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span> 425 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Латунь микс</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>340 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Латунные радиаторы</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>355 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Латунные радиаторы</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>355 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Алюминий электротехнический</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>145 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Латунные радиаторы</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>355 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Латунные радиаторы</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>355 руб</span>
-        </div>
-      </div>
-      <div className="pricesSectionPriceBlockOne">
-        <div className="pricesSectionPriceTextOne">
-          <span>Латунные радиаторы</span>
-        </div>
-        <div className="pricesSectionPriceTextOne">
-          <span>355 руб</span>
-        </div>
-      </div> */}
       </div>
       <ModalCall setActive={setActive} active={active} />
     </>

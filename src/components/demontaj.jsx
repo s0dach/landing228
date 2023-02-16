@@ -1,6 +1,5 @@
 import React from "react";
 import { useContext } from "react";
-import { ReactComponent as People } from "../components/assets/people.svg";
 import { ActiveContext } from "./context";
 import { ModalCall } from "./modalCall/ModalCall";
 

@@ -12,9 +12,9 @@ export const Calc = () => {
   const { active, setActive } = useContext(ActiveContext);
   React.useEffect(() => {
     axios
-      .get("http://95.163.234.208:4500/price/1")
+      .get("https://unmarred-silky-crowley.glitch.me/price/1")
       .then(({ data }) => setPrice(data.one));
-  });
+  }, []);
   const saveResult = (index) => {
     if (!state) {
       setOk(Number(price?.[index]?.[1] * number) * 1000);

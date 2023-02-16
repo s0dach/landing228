@@ -1,72 +1,75 @@
+import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Contact } from "./contact";
-import { Maps } from "./maps";
 
 export const Navigation = () => {
   const navigate = useNavigate();
+  const [number, setNumber] = React.useState("+7‒922‒396‒00‒11");
+  React.useEffect(() => {
+    axios
+      .get("https://unmarred-silky-crowley.glitch.me/price/1")
+      .then(({ data }) => setNumber(data.number));
+  }, []);
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-          </button>
-          <div
-            className="collapse navbar-collapse"
-            id="bs-example-navbar-collapse-1"
-          >
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <span
-                  className="pageSpan"
-                  onClick={() => {
-                    navigate("/calculator");
-                  }}
-                >
-                  Калькулятор цен
-                </span>
-              </li>
-              <li>
-                <span
-                  onClick={() => {
-                    navigate("/about");
-                  }}
-                  className="pageSpan"
-                >
-                  О компании
-                </span>
-              </li>
-              {/* <li>
+      <div className="navbar-header">
+        <button
+          type="button"
+          className="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"
+        >
+          <span className="sr-only">Toggle navigation</span>
+          <span className="icon-bar"></span> <span className="icon-bar"></span>{" "}
+          <span className="icon-bar"></span>{" "}
+        </button>
+        <div
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul className="nav navbar-nav navbar-right">
+            <li>
+              <span
+                className="pageSpan"
+                onClick={() => {
+                  navigate("/calculator");
+                }}
+              >
+                Калькулятор цен
+              </span>
+            </li>
+            <li>
+              <span
+                onClick={() => {
+                  navigate("/about");
+                }}
+                className="pageSpan"
+              >
+                О компании
+              </span>
+            </li>
+            {/* <li>
               <span onClick={() => navigate("/price")} className="pageSpan">
                 Наши цены
               </span>
             </li> */}
-              <li>
-                <span
-                  className="pageSpan"
-                  onClick={() => {
-                    navigate("/contacts");
-                  }}
-                >
-                  Контакты
-                </span>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <span
+                className="pageSpan"
+                onClick={() => {
+                  navigate("/contacts");
+                }}
+              >
+                Контакты
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
+
       <div className="containerCenter">
-        <div className="centerBlock">
+        <div className="centerBlockMobile">
           <div className="centerBlockOne">
             <h1 className="nameCenterBlock" onClick={() => navigate("/")}>
               ЯЛ-МЕТ
@@ -96,7 +99,7 @@ export const Navigation = () => {
             </div>
           </div>
         </div>
-        <div className="centerBlock">
+        <div className="centerBlockMobile">
           <div className="centerBlockOne">
             <div className="imageBlock">
               <img
@@ -109,7 +112,7 @@ export const Navigation = () => {
             </div>
             <div className="BlockSpanDiv">
               <div>
-                <span className="blockCenterText">+7 999 999 99 99</span>
+                <span className="blockCenterText">{number}</span>
               </div>
               <div>
                 <span>c 8 до 21:00</span>
@@ -147,11 +150,11 @@ export const Navigation = () => {
           </span>
         </div> */}
         <div className="navFlexBlock">
-          <div class="dropdown">
-            <div class="navFlexText" onClick={() => navigate("/prices")}>
+          <div className="dropdown">
+            <div className="navFlexText" onClick={() => navigate("/prices")}>
               Черный лом
             </div>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <div
                 className="menuBlockText"
                 onClick={() => navigate("/prices")}
@@ -174,11 +177,11 @@ export const Navigation = () => {
           </div>
         </div>
         <div className="navFlexBlock">
-          <div class="dropdown">
-            <div class="navFlexText" onClick={() => navigate("/prices")}>
+          <div className="dropdown">
+            <div className="navFlexText" onClick={() => navigate("/prices")}>
               Цветной лом
             </div>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <div
                 className="menuBlockText"
                 onClick={() => navigate("/prices")}
